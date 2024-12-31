@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Resume</title>
+    <style>
+        .background {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            max-width: 900px;
+            min-height: 1100px;
+            margin: 50px auto;
+            background-color: #070707;
+            box-shadow: 0 35px 55px #FA7070;
+            padding: 20px;
+            color: white;
+        }
+        .leftside {
+            position: relative;
+            background: #E1AFD1;
+            padding: 40px;
+        }
+        .profile {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+        .profile .image {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .profile .image img {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .languages {
+            position: relative;
+            width: 100%;
+            height: 5px;
+            background: #070707;
+            margin-bottom: 10px;
+        }
+        .languages .percent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: blue;
+        }
+        .rightside {
+            padding: 20px;
+            background: #41B3A2;
+            box-sizing: border-box;
+        }
+        .profile details {
+            text-align: justify;
+            line-height: 1.5em;
+        }
+        .skills .box {
+            position: relative;
+            width: 100%;
+            display: grid;
+            line-height: 0.01em;
+            grid-template-columns: 150px 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .skills .box h4 {
+            text-transform: uppercase;
+            color: white;
+            font-weight: 500;
+        }
+        .skills .box .percent {
+            position: relative;
+            width: 100%;
+            height: 10px;
+            background: #000000;
+        }
+        .skills .box .percent div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: blue;
+        }
+        .project details {
+            line-height: 1em;
+            text-align: justify;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftside">
+            <div class="profile">
+                <div class="image">
+                    <img src="tamil.jpg" alt="Profile image of Tamil Selvan M">
+                </div>
+                <h2>TAMIL SELVAN M</h2>
+                <p>B.Sc Networking</p>
+                <div class="contact">
+                    <h2>CONTACT</h2>
+                    <p><i class="fa-solid fa-envelope"></i> tamilselvants1211@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7010887084</p>
+                    <p><i class="fa-solid fa-house"></i> 28, Kakkan Colony Rajaji 12th Street Thirumangalam Madurai</p>
+                </div>
+                <div class="education">
+                    <h2>EDUCATION</h2>
+                    <p><b>2023-2025</b><br>B.Sc Networking - 69% (Till 4th Sem)<br>Subbulakshmi Lakshmipathy College of Science Madurai</p>
+                    <p><b>2022-2023</b><br>12th STD - 72%<br>PKN Hr. Sec. School Thirumangalam</p>
+                    <p><b>2022-2023</b><br>10th STD - 63%<br>PKN Hr. Sec. School Thirumangalam</p>
+                </div>
+                <div>
+                    <h2>LANGUAGES</h2>
+                    <p>Tamil</p>
+                    <div class="languages">
+                        <div class="percent" style="width: 96%;"></div>
+                    </div>
+                    <p>English</p>
+                    <div class="languages">
+                        <div class="percent" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="about">
+                <h2 class="title">PROFILE</h2>
+                <p class="profile details">BSc Networking with strong skills in network design, configuration, and troubleshooting. Experienced in managing network systems and ensuring security with hands-on knowledge of TCP/IP, DNS, and VPNs. Eager to apply technical expertise in a network engineering or IT support role. Quick learner with a collaborative mindset and problem-solving abilities.</p>
+            </div>
+            <div class="certification">
+                <h2>CERTIFICATION</h2>
+                <p>Python</p>
+                <p>CompTIA A+</p>
+                <p>CompTIA N+</p>
+                <p>Linux</p>
+            </div>
+            <div class="skills">
+                <h2 class="title2">Professional Skills</h2>
+                <div class="box">
+                    <h4>Python</h4>
+                    <div class="percent">
+                        <div style="width: 96%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>HTML</h4>
+                    <div class="percent">
+                        <div style="width: 94%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>CSS</h4>
+                    <div class="percent">
+                        <div style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>IoT (Basic)</h4>
+                    <div class="percent">
+                        <div style="width: 87%"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>INTERNSHIP PROJECT</h2>
+                <p>Automation Car in IoT:</p>
+                <div class="project details">
+                    <ul>
+                        <li><p>Simple automation car to connect ESP8266 with two motors and control them based on object detection.</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2>PYTHON PROJECT</h2>
+                <p>Employee Management System:</p>
+                <div class="project details">
+                    <ul>
+                        <li><p>The Employee Management System is a Python-based application designed to streamline and automate the management of employee personal details data.</p></li>
+                        <li><p>It provides features for adding, updating, and deleting employee information.</p></li>
+                        <li><p></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+ 
+
+
+
+
+
+
+
+
